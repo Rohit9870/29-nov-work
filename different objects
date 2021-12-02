@@ -1,0 +1,32 @@
+class vehicle{
+    String name;
+    int number;
+    String color;
+    
+    void insert(String a, int b, String c){
+        name = a;
+        number = b;
+        color = c;
+    }
+    
+    void functionality(){
+        System.out.println("Name : "+name+ ", Number : "+number+ ", color : "+color);
+    }
+}
+
+class Testvehicle{
+    public static void main(String[] args){
+        vehicle bike= new vehicle();
+        vehicle car = new vehicle();
+        vehicle truck = new vehicle();
+        
+        bike.insert("honda", 2121, "black");
+        car.insert("Brezza", 2021, "white");
+        truck.insert("truck", 7658, "red");
+        
+        bike.functionality();
+        car.functionality();
+        truck.functionality();
+        
+    }
+}
