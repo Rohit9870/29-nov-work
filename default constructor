@@ -1,0 +1,20 @@
+class bike{
+    String name;
+    int number;
+    String color;
+    
+    
+    
+    void functionality(){
+        System.out.println("Name : "+name+ ", Number : "+number+ ", color : "+color);
+    }
+}
+
+class Testvehicle{
+    public static void main(String[] args){
+        bike honda = new bike();
+        
+        honda.functionality();
+        
+    }
+}
